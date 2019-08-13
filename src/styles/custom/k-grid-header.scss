@@ -1,0 +1,28 @@
+.k-grid-header {
+    border-top: 1px solid #ccc !important;
+
+    th.k-header {
+        padding: .2em .6em 0.2em .6em !important;
+        background-color: white;
+        border-bottom: none !important;
+
+        &.k-grid-toolbar {
+            /*border-bottom: 1px solid $grey80 !important;*/
+        }
+
+        &.k-widget.k-autocomplete {
+            border-bottom: 1px solid grey !important;
+        }
+
+        & .k-link {
+            //font-size: em(14px);
+            font-weight: 500;
+            text-align: left;
+        }
+
+        .k-checkbox-label {
+            margin-top: 0.4em;
+            margin-bottom: 0.1em;
+        }
+    }
+}

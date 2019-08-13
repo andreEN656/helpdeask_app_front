@@ -1,0 +1,5 @@
+/dist/*
+/node_modules
+webpack-assets.json
+/.vs
+/src/.vs

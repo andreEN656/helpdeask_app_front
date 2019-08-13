@@ -1,0 +1,21 @@
+.nav-bar-list {
+    list-style-type: none;
+    height: 100%;
+    align-items: stretch;
+    padding-left: 0;
+    display: flex;
+
+    & li {
+        margin-right: 3.75em;
+
+        &.thin-title {
+            margin-right: em(15px) !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    span.bar-link__responsible {
+        display: none;
+    }
+}

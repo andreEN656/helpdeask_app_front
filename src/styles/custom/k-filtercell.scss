@@ -1,0 +1,19 @@
+.k-filtercell {
+    & > .k-operator-hidden {
+        padding-right: 3em !important;
+        width: calc(100% - 2.7em);
+
+        [data-bind="value: value"] {
+            width: 100%;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            height: 1.5em;
+        }
+    }
+
+    & > span {
+        & > .k-button {
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,355 @@
+.custom {
+    &_button {
+        height: 3em;
+        -webkit-border-radius: 3px;
+        margin-top: 10px;
+
+        &_comment {
+            width: 10em;
+        }
+
+        &_attach {
+            height: 19px !important;
+            width: 19px !important;
+            position: relative;
+            background: none;
+            top: -13px;
+            right: -7px;
+            cursor: pointer;
+            /*color: #fff;*/
+            border: none;
+            padding: 0 !important;
+            /*border-radius: 30px;*/
+            line-height: 18px;
+        }
+
+        &_photo {
+            height: 24px !important;
+            width: 24px !important;
+            position: absolute;
+            background: none;
+            cursor: pointer;
+            /*color: #fff;*/
+            border: none;
+            padding: 0 !important;
+            line-height: 18px;
+            margin-top: 0 !important;
+
+            &_add {
+                top: 2px;
+                right: 2px;
+            }
+
+            &_delete {
+                top: 32px;
+                right: 2px;
+            }
+        }
+
+        &_search {
+            height: 22px !important;
+            width: 22px !important;
+            position: relative;
+            background: none;
+            color: white;
+            top: -0.15em;
+            right: -0.5em;
+            cursor: pointer;
+            /*color: #fff;*/
+            border: none;
+            /*border-radius: 30px;*/
+            line-height: 18px;
+        }
+
+        &_cross {
+            height: 22px !important;
+            width: 22px !important;
+            position: relative;
+            background: none;
+            color: white;
+            top: -0.1em;
+            right: 0.1em;
+            cursor: pointer;
+            /*color: #fff;*/
+            border: none;
+            /*border-radius: 30px;*/
+            line-height: 18px;
+        }
+
+
+        &_save-task {
+            width: 20.83em;
+            -webkit-border-radius: 5px;
+        }
+
+        &_save {
+            width: 10em;
+            background-color: rgb(225,0,0);
+            color: white;
+
+            &:hover {
+                background-color: rgb(205,0,0) !important;
+            }
+
+            &:active {
+                background-color: rgb(175,0,0) !important;
+                box-shadow: none !important;
+            }
+        }
+
+        &_round {
+            background-color: rgb(255,255,255);
+            opacity: 0.75;
+            border-radius: 30px;
+            width: 50px;
+            height: 50px;
+        }
+
+        &_popup {
+            height: 36px !important;
+            width: 165px;
+
+            span {
+                font-size: 14px
+            }
+
+            &_margin {
+                margin: 2px 20px 2px !important;
+            }
+        }
+
+        p {
+            text-align: center;
+        }
+
+        &_submit {
+            width: 16.667em;
+            height: 3.75em;
+
+            &_thin {
+                width: 16.667em;
+                height: 3.16em !important;
+            }
+        }
+    }
+
+    &_fieldlist {
+        margin: 0 0 0em;
+        padding: 0;
+        list-style: none;
+
+        &_title {
+            margin: 1em 0 !important;
+        }
+
+        li {
+            list-style: none;
+            padding-bottom: 0em;
+            margin-top: 0em;
+        }
+
+        &_task-radio {
+            li {
+                background-color: rgb(255,255,255);
+                -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+                list-style: none;
+                padding: 0;
+                margin: 0 0 5px;
+                width: inherit;
+            }
+
+            label {
+                height: 35px;
+                width: 250px;
+                padding: 0;
+                margin: 0;
+            }
+
+            p {
+                margin: 10px 0 0 36px !important;
+            }
+        }
+    }
+
+
+    &_task-radio {
+        .k-radio-label::before {
+            top: 6px !important;
+            left: 6px !important;
+            width: 20px !important;
+            height: 20px !important;
+        }
+
+        .k-radio-label::after {
+            top: 14px !important;
+            left: 14px !important;
+            width: 6px !important;
+            height: 6px !important;
+        }
+
+        &_new {
+            .k-radio:checked + .k-radio-label::before {
+                border-color: yellowgreen;
+            }
+
+            .k-radio:checked + .k-radio-label::after {
+                background-color: yellowgreen;
+                border-color: yellowgreen;
+            }
+
+            .k-radio:checked + .k-radio-label {
+                background-color: yellowgreen;
+                color: white;
+            }
+
+            .k-radio-label {
+                color: yellowgreen;
+            }
+        }
+
+        &_active {
+            .k-radio:checked + .k-radio-label::before {
+                border-color: rgb(40,19,112);
+            }
+
+            .k-radio:checked + .k-radio-label::after {
+                background-color: rgb(40,19,112);
+                border-color: rgb(40,19,112);
+            }
+
+            .k-radio:checked + .k-radio-label {
+                background-color: rgb(40,19,112);
+                color: white;
+            }
+
+            .k-radio-label {
+                color: rgb(40,19,112);
+            }
+        }
+
+        &_closed {
+            .k-radio:checked + .k-radio-label::before {
+                border-color: rgb(155,155,155);
+            }
+
+            .k-radio:checked + .k-radio-label::after {
+                background-color: rgb(155,155,155);
+                border-color: rgb(155,155,155);
+            }
+
+            .k-radio:checked + .k-radio-label {
+                background-color: rgb(155,155,155);
+                color: white;
+            }
+
+            .k-radio-label {
+                color: rgb(155,155,155);
+            }
+        }
+
+        &_cancelled {
+            .k-radio:checked + .k-radio-label::before {
+                border-color: rgb(225,0,0);
+            }
+
+            .k-radio:checked + .k-radio-label::after {
+                background-color: rgb(225,0,0);
+                border-color: rgb(225,0,0);
+            }
+
+            .k-radio:checked + .k-radio-label {
+                background-color: rgb(225,0,0);
+                color: white;
+            }
+
+            .k-radio-label {
+                color: rgb(225,0,0);
+            }
+        }
+    }
+
+
+    &_subject {
+        font-size: 13px;
+        color: rgb(40,19,112);
+        font-weight: bolder;
+    }
+
+    &_caption {
+        font-size: 11px;
+        color: rgb(102,102,102);
+        font-weight: 400;
+    }
+
+    &_message {
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: 500;
+    }
+
+    &_card {
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+        transition: 0.1s;
+        width: 300px;
+        height: 172px;
+        margin: 5px;
+        padding: 2px 16px 10px;
+
+        &_wide {
+            width: 610px !important;
+
+            div.placement__column_no-line:first-child {
+                padding: 0 21px 0 0 !important;
+            }
+
+            div.placement__column_no-line:last-child {
+                padding: 0 0 0 21px !important;
+            }
+        }
+
+        &_square {
+            height: 200px;
+            width: 200px;
+            cursor: pointer;
+            padding: 0;
+            margin: 5px 24px;
+        }
+
+        &:hover {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+        }
+
+        .placement-attr-item__title {
+            font-weight: 400 !important;
+            width: 80% !important;
+        }
+    }
+}
+
+.k-i-close {
+    margin: -1px 0 1px !important;
+}
+
+.k-numerictextbox .k-input {
+    width: 100% !important;
+}
+
+
+.select-value {
+    vertical-align: middle;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+}
+
+.selected-value {
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
